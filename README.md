@@ -5,7 +5,7 @@
 `pnpm test src/App/App.spec.tsx` should be successful.
 
 ## Actual
-`pnpm test src/App/App.spec.tsx` failed, saying the text cannot be found.
+`pnpm test src/App/App.spec.tsx` failed, saying the text is not visible.
 
 ```
 Received element is not visible:
