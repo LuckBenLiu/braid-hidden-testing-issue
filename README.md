@@ -7,6 +7,8 @@
 ## Actual
 `pnpm test src/App/App.spec.tsx` failed, saying the text is not visible.
 
+Also, it looks like no matter what value I give to the `breakpoint`, the test will fail.
+
 ```
 Received element is not visible:
       <div class="reset_base__14h31gj0 sprinkles_display_none_mobile__7n536n4w sprinkles_display_block_tablet__7n536n51" />
