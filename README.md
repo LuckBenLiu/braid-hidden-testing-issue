@@ -1,4 +1,4 @@
-# hidden-testing-issue
+# braid-hidden-testing-issue
 `Hidden` component in `braid-design-system` seems cannot be mocked properly using `BraidTestProvider` by manipulating `breakpoint`.
 
 ## Expectation
