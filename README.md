@@ -1,40 +1,23 @@
 # hidden-testing-issue
+`Hidden` component in `braid-design-system` seems cannot be mocked properly using `BraidTestProvider` by manipulating `breakpoint`.
 
-This project is powered by [sku](https://github.com/seek-oss/sku), [braid](https://github.com/seek-oss/braid-design-system) and built with [React](https://facebook.github.io/react).
+## Expectation
+`pnpm test src/App/App.spec.tsx` should be successful.
 
-## Getting Started
+## Actual
+`pnpm test src/App/App.spec.tsx` failed, saying the text cannot be found.
 
-First of all, make sure you&#39;ve installed [pnpm](https://pnpm.io/installation).
-
-Then, install dependencies:
-
-```sh
-$ pnpm i
 ```
+Received element is not visible:
+      <div class="reset_base__14h31gj0 sprinkles_display_none_mobile__7n536n4w sprinkles_display_block_tablet__7n536n51" />
 
-## Workflow
+      14 |     );
+      15 |
+    > 16 |     expect(screen.getByText('Hello world (greater than tablet)')).toBeVisible();
+         |                                                                   ^
+      17 |   });
+      18 | });
+      19 |
 
-Start a local development server:
-
-```sh
-$ pnpm run start
-```
-
-Run unit tests:
-
-```sh
-$ pnpm run test
-```
-
-Lint and format code:
-
-```sh
-$ pnpm run lint
-$ pnpm run format
-```
-
-Build assets for production:
-
-```sh
-$ pnpm run build
+      at Object.toBeVisible (src/App/App.spec.tsx:16:67)
 ```
